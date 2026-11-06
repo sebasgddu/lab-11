@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+void registarNotas (int notas [], int n);
+void mostrarNotas (int notas [], int n);
+float calcularPromedio(int notas [], int n);
+void mayorMenor (int notas [],int n,
+                 float &mayor, float &menor);
+int contarAprobados(int notas [], int n);
+int buscarNota(int notas [], int n, int notaBuscada);
+void actualizarNota(int notas [], int n,);
+int main () {
+    int notas[30];
+    int n;
+    float promedio ;
+    int mayor;
+    int menor;
+    int contarAprobados;
+    int NOTA ;
+    cout<<"cantidad de estudiantes";
+    cin>>n;
+do {
+    cout<<"ingrese el numero de estudiantes entre 1 y 30";
+    cin>>n;
+}
+  while(n<1 ||n>30);
+  registarNotas (notas, n);
+  mostrarNotas(notas,n);
+  promedio =calcularPromedio(notas,n);
+  mayorMenor(notas, n,mayor, menor);
+  
+  
+}
